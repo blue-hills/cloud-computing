@@ -1,0 +1,9 @@
+FROM  php:8.1.16-apache
+# Copy the Application files to temporary folder /tmp/app
+COPY ./configure ./index.php  /tmp/app/
+COPY ./ajax/ /tmp/app/ajax/
+COPY ./backend/  /tmp/app/backend/
+COPY ./css/ /tmp/app/css/
+# Run the configure script to enable and install mysqli extension
+# confgure script also copies the application files to appropriate html folders
+RUN  /bin/bash /tmp/app/configure 

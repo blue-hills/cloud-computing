@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Serverless template to install lambda to query the search gateway
+Resources:
+  searchgateway:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: search-gateway.lambda_handler
+      Runtime: python3.9
+      CodeUri: './search-gateway-package.zip'
+      Description: ''
+      MemorySize: 128
+      Timeout: 300
+      Role: 'arn:aws:iam::506160996768:role/lamda_s3_role'

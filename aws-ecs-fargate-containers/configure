@@ -1,0 +1,12 @@
+# Copy the application files to /var/www/html folder
+cp -r /tmp/app/ajax/ /var/www/html
+cp -r /tmp/app/backend/ /var/www/html
+cp -r /tmp/app/css/ /var/www/html
+# Copy the modified index.php
+cp /tmp/app/index.php     /var/www/html/
+# Create the php.ini configuration file
+cp /var/www/html/php.ini-production /var/www/html/php.ini
+# Enable mysqli extension to access the MySQL database server
+sed -i 's/^;extension=mysqli/extension=mysqli/g' /var/www/html/php.ini
+# Install the mysqli extension 
+docker-php-ext-install mysqli 

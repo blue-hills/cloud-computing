@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - aws cloudformation package --template-file search-gateway.yaml --s3-bucket search-domain-project-artifacts --output-template-file search-gateway-output.yaml
+
+artifacts:
+  type: zip
+  files:
+    - search-gateway.yaml
+    - search-gateway-output.yaml

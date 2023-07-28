@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - aws cloudformation package --template-file upload-to-search.yaml --s3-bucket search-domain-project-artifacts --output-template-file upload-to-search-output.yaml
+
+artifacts:
+  type: zip
+  files:
+    - upload-to-search.yaml
+    - upload-to-search-output.yaml

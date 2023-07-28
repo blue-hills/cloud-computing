@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Lambda function to upload the documents from s3 bucket to Search Domain
+#  Resources
+Resources:
+  uploadtosearch:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: upload-to-search.handler
+      Runtime: python3.9
+      CodeUri: './upload-to-search-package.zip'
+      Description: ''
+      MemorySize: 512
+      Timeout: 900
+      Role: 'arn:aws:iam::506160996768:role/lamda_s3_role'

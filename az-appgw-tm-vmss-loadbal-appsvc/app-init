@@ -1,0 +1,33 @@
+#!/bin/bash
+# Update packages and install required software
+apt-get update
+apt-get install -y apache2 php mysql-client
+apt install -y php-mysqli
+
+#Download the PHP application from the git repo
+cd /opt
+git clone https://github.com/blue-hills/azproject2.git
+cd azproject2
+sed -i "s=<body>=<body><h1>Host:$(hostname)</h1>=" ./index.php
+cp index.php /var/www/html
+
+DB_USER="appadmin"
+DB_PASS="pi=3.14159"
+DB_URL="appmodern.mysql.database.azure.com"
+DATABASE="employees"
+
+# Define the environment variables to be used by the PHP application
+echo "export DB_USER=$DB_USER" >> /etc/apache2/envvars
+echo "export DB_URL=$DB_URL" >> /etc/apache2/envvars
+echo "export DB_PASS=$DB_PASS" >> /etc/apache2/envvars
+echo "export DATABASE=$DATABASE" >> /etc/apache2/envvars
+
+#define the fallback resource
+echo "<Directory /var/www/html>" >> /etc/apache2/apache2.conf
+echo "FallbackResource index.php" >> /etc/apache2/apache2.conf
+echo "</Directory>" >> /etc/apache2/apache2.conf
+
+# Update Apache configuration
+sed -i "s/DirectoryIndex index.html/DirectoryIndex index.php index.html/" /etc/apache2/mods-enabled/dir.conf
+# Restart Apache
+systemctl restart apache2
