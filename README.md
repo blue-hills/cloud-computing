@@ -1,5 +1,5 @@
 # [Post Graduate program in Cloud Computing, UT-Austin](http://www.mccombs.utexas.edu/execed/for-individuals/certificates/great-learning/#d.en.30507)
-##  Course projects 
+##  Completed Course projects 
 
 ###  [OwnCloud Deployment in AWS](https://github.com/blue-hills/cloud-computing/tree/main/aws-owncloud-deployment)
 * Use of Internet Gateways and Route Tables to create public subnets to host Web Severs.
@@ -35,9 +35,9 @@
 
 |   |   |
 |---|---|
-|Strangler Fig Pattern |Application Gateway can be used for gradual migration from legacy systems to modern systems based on Path based Rules|
-|Canary Releases|Traffic manager can be used for canary releases based on weighted Routing method|
-|Elasticity|VM scale sets can be used to scale out /in based on loads/performance metrics|
-|Load Balancer|Public load balancer can be used with Traffic Manager. Both Public & Private load balancer can be used in Application Gateway. Session Affinity/persistence can be enabled or disabled.|
-|Serverless Deployment|PHP Web Application is deployed on App Service Plans using Git Hub Workflow.|
-|Lift And Shift Cases|Legacy applications can be run in VM Scale set with the appropriate OS and runtime binaries.|
+|Strangler Fig Pattern |Use of Application Gateway for gradual migration from legacy systems to modern systems based on Path based Rules|
+|Canary Releases|Use of Traffic manager for canary releases based on weighted Routing method|
+|Elasticity|VM scale sets to scale out/in based on loads/performance metrics|
+|Load Balancer|Use of Public load balancer with Traffic Manager. Use of both Public & Private load balancer in Application Gateway. Session Affinity/persistence.|
+|Serverless Deployment|Use of Git Hub workflow to deploy a PHP Web Application on App Service Plan.|
+|Lift And Shift Cases|Use of VM Scale sets with appropriate OS and runtime binaries to run the legacy applications|
