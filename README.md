@@ -50,4 +50,4 @@
 |Serverless Deployment|Use of Git Hub workflow to deploy a PHP Web Application on App Service Plan.|
 |Lift And Shift Cases|Use of VM Scale sets with appropriate OS and runtime binaries to run the legacy applications|
 
-![cloudmodernization](https://github.com/blue-hills/cloud-computing/assets/50052802/3f71e8c6-3593-4769-a594-37b41ee012e1)
+![architecture2](https://github.com/blue-hills/cloud-computing/assets/50052802/6516f90b-6246-4b1f-9746-b13984825c17)
