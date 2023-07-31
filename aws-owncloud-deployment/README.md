@@ -6,4 +6,4 @@
 * Deployment of LAMP stacks on Linux EC2 instances
 * Implementation of AWS CLI scripts to create configure different AWS services
 
-![architecture](./architecture.svg]
+![architecture](./architecture.svg)
