@@ -6,3 +6,4 @@
 * Deployment of PHP Docker Container in ECS/FARGATE using Code Pipeline.
 * Deployment of MySQL Docker Containers in EC2 instances
 
+![architecture2](./project2-architecture.svg)
