@@ -11,4 +11,4 @@
 |Serverless Deployment|Use of Git Hub workflow to deploy a PHP Web Application on App Service Plan.|
 |Lift And Shift Cases|Use of VM Scale sets with appropriate OS and runtime binaries to run the legacy applications|
 
-![architecture](./architecture.svg)
+![architecture](./architecture.png)

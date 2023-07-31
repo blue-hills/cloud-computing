@@ -5,4 +5,5 @@
 * Bastion host to SSH access the Database servers in private subnets
 * Deployment of LAMP stacks on Linux EC2 instances
 * Implementation of AWS CLI scripts to create configure different AWS services
-![Architecture](./architecture.svg]
+
+![architecture](./architecture.svg]
