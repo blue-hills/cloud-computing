@@ -1,7 +1,7 @@
 # [Post Graduate program in Cloud Computing, UT-Austin](http://www.mccombs.utexas.edu/execed/for-individuals/certificates/great-learning/#d.en.30507)
 ##  Completed Course projects 
 
-###  [OwnCloud Deployment in AWS](https://github.com/blue-hills/cloud-computing/tree/main/aws-owncloud-deployment)
+###  [Deployment of OwnCloud in AWS](https://github.com/blue-hills/cloud-computing/tree/main/aws-owncloud-deployment)
 * Use of Internet Gateways and Route Tables to create public subnets to host Web Severs.
 * Use of NAT Gateways and Route tables to create private subnets to host Database Servers
 * Use of Stateful Security groups to allow  access to SSH/HTTP/MySQL in EC2 instances
